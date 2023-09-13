@@ -6,12 +6,14 @@
     }
     }
 }
-
 provider "azurerm" {
   features {}
-skip_provider_registration = true
-}
 
+  subscription_id = "7e3cd86c-691b-4f27-83e2-72c4d63a5736"
+  client_id       = "75e37be0-97f6-4e45-8d40-a4db485b66"
+  client_secret   = "QvE8Q~.buQwrPNXWE3r2e2Xf-oUikpHSkDNVVc"
+  tenant_id       = "5c4c3ab4-7994-41c2-bf07-3b972c97d84c"
+}
 data "azurerm_client_config" "current" {}
 
 resource "azurerm_resource_group" "example" {
