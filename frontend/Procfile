@@ -1,1 +1,0 @@
-web: java $JAVA_OPTS -Dserver.port=$PORT -jar target/frontend-1.0-RELEASE.jar
